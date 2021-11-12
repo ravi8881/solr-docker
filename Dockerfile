@@ -16,7 +16,7 @@ ARG SOLR_DOWNLOAD_SERVER
 
 RUN set -ex; \
   apt-get update; \
-  apt-get -y install acl dirmngr gpg lsof procps wget netcat gosu tini; \
+  apt-get -y install acl dirmngr gpg lsof procps wget netcat nano gosu tini; \
   rm -rf /var/lib/apt/lists/*; \
   cd /usr/local/bin; wget -nv https://github.com/apangin/jattach/releases/download/v1.5/jattach; chmod 755 jattach; \
   echo >jattach.sha512 "d8eedbb3e192a8596c08efedff99b9acf1075331e1747107c07cdb1718db2abe259ef168109e46bd4cf80d47d43028ff469f95e6ddcbdda4d7ffa73a20e852f9  jattach"; \
@@ -114,6 +114,19 @@ RUN set -ex; \
   rm -r "$GNUPGHOME"
 
 COPY --chown=0:0 scripts /opt/docker-solr/scripts
+COPY --chown=0:0 msgProtocol /var/solr/data/msgProtocol
+COPY --chown=0:0 like /var/solr/data/like
+COPY --chown=0:0 content /var/solr/data/content
+COPY --chown=0:0 review /var/solr/data/review
+COPY --chown=0:0 analytic /var/solr/data/analytic
+COPY --chown=0:0 apiKey /var/solr/data/apiKey
+COPY --chown=0:0 commentRattingAnalytic2 /var/solr/data/commentRattingAnalytic2
+COPY --chown=0:0 helpFull /var/solr/data/helpFull
+COPY --chown=0:0 reply /var/solr/data/reply
+COPY --chown=0:0 ReplyLikeHelpfulAnalytic /var/solr/data/ReplyLikeHelpfulAnalytic
+COPY --chown=0:0 users /var/solr/data/users
+
+RUN chmod -R 0777 /var/solr/data
 
 VOLUME /var/solr
 EXPOSE 8983
