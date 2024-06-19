@@ -49,8 +49,8 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="ravimunbaomx" type="INTEGER" indexed="true" stored="true"/>
-      <field name="ravi-Field2" type="VARCHAR" indexed="true" stored="true"/>
+      <field name="ravi-field" type="string" indexed="true" stored="true"/>
+      <field name="ravi-Field2" type="string" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
