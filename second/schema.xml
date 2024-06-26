@@ -49,7 +49,7 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="second-field" type="string" indexed="true" stored="true"/>
+      <field name="second-field" type="INTEGER" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
