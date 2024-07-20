@@ -49,20 +49,11 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="id" type="String" indexed="true" stored="true"/>
-      <field name="customer_id" type="String" indexed="true" stored="true"/>
-      <field name="employee_id" type="String" indexed="true" stored="true"/>
-      <field name="order_date" type="String" indexed="true" stored="true"/>
-      <field name="required_date" type="String" indexed="true" stored="true"/>
-      <field name="shipped_date" type="String" indexed="true" stored="true"/>
-      <field name="ship_via" type="String" indexed="true" stored="true"/>
-      <field name="freight" type="String" indexed="true" stored="true"/>
-      <field name="ship_name" type="String" indexed="true" stored="true"/>
-      <field name="ship_address" type="String" indexed="true" stored="true"/>
-      <field name="ship_city" type="String" indexed="true" stored="true"/>
-      <field name="ship_region" type="String" indexed="true" stored="true"/>
-      <field name="ship_postal_code" type="String" indexed="true" stored="true"/>
-      <field name="ship_country" type="String" indexed="true" stored="true"/>
+      <field name="order_id" type="String" indexed="true" stored="true"/>
+      <field name="product_id" type="String" indexed="true" stored="true"/>
+      <field name="unit_price" type="String" indexed="true" stored="true"/>
+      <field name="quantity" type="String" indexed="true" stored="true"/>
+      <field name="discount" type="String" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
