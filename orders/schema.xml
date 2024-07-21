@@ -49,20 +49,20 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="customer_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="employee_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="order_date" type="DATE" indexed="true" stored="true"/>
-      <field name="required_date" type="DATE" indexed="true" stored="true"/>
-      <field name="shipped_date" type="DATE" indexed="true" stored="true"/>
-      <field name="ship_via" type="INTEGER" indexed="true" stored="true"/>
-      <field name="freight" type="BIGINT" indexed="true" stored="true"/>
-      <field name="ship_name" type="VARCHAR(40)" indexed="true" stored="true"/>
-      <field name="ship_address" type="VARCHAR(60)" indexed="true" stored="true"/>
-      <field name="ship_city" type="INTEGER" indexed="true" stored="true"/>
-      <field name="ship_region" type="VARCHAR(15)" indexed="true" stored="true"/>
-      <field name="ship_postal_code" type="VARCHAR(10)" indexed="true" stored="true"/>
-      <field name="ship_country" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="id" type="String" indexed="true" stored="true"/>
+      <field name="customer_id" type="String" indexed="true" stored="true"/>
+      <field name="employee_id" type="String" indexed="true" stored="true"/>
+      <field name="order_date" type="String" indexed="true" stored="true"/>
+      <field name="required_date" type="String" indexed="true" stored="true"/>
+      <field name="shipped_date" type="String" indexed="true" stored="true"/>
+      <field name="ship_via" type="String" indexed="true" stored="true"/>
+      <field name="freight" type="String" indexed="true" stored="true"/>
+      <field name="ship_name" type="String" indexed="true" stored="true"/>
+      <field name="ship_address" type="String" indexed="true" stored="true"/>
+      <field name="ship_city" type="String" indexed="true" stored="true"/>
+      <field name="ship_region" type="String" indexed="true" stored="true"/>
+      <field name="ship_postal_code" type="String" indexed="true" stored="true"/>
+      <field name="ship_country" type="String" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
