@@ -113,32 +113,9 @@ RUN set -ex; \
   { command -v gpgconf; gpgconf --kill all || :; }; \
   rm -r "$GNUPGHOME"
 
-COPY --chown=0:0 scripts /opt/docker-solr/scripts
-COPY --chown=0:0 msgProtocol /var/solr/data/msgProtocol
-COPY --chown=0:0 like /var/solr/data/like
-COPY --chown=0:0 content /var/solr/data/content
-COPY --chown=0:0 review /var/solr/data/review
-COPY --chown=0:0 analytic /var/solr/data/analytic
-COPY --chown=0:0 apiKey /var/solr/data/apiKey
-COPY --chown=0:0 commentRattingAnalytic2 /var/solr/data/commentRattingAnalytic2
-COPY --chown=0:0 helpFull /var/solr/data/helpFull
-COPY --chown=0:0 reply /var/solr/data/reply
-COPY --chown=0:0 ReplyLikeHelpfulAnalytic /var/solr/data/ReplyLikeHelpfulAnalytic
-COPY --chown=0:0 users /var/solr/data/users
 
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 orders /var/solr/data/orders
+  COPY --chown=0:0 ravimem /var/solr/data/ravimem
+  COPY --chown=0:0 ravime2 /var/solr/data/ravime2
   COPY --chown=0:0 orders /var/solr/data/orders
 
 RUN chmod -R 0777 /var/solr/data
