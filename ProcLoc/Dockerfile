@@ -117,6 +117,7 @@ RUN set -ex; \
   COPY --chown=0:0 ravimem /var/solr/data/ravimem
   COPY --chown=0:0 ravime2 /var/solr/data/ravime2
   COPY --chown=0:0 orders /var/solr/data/orders
+  COPY --chown=0:0 headsheet /var/solr/data/headsheet
 
 RUN chmod -R 0777 /var/solr/data
 
