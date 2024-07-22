@@ -49,15 +49,15 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="id" type="String" indexed="true" stored="true"/>
-      <field name="name" type="String" indexed="true" stored="true"/>
-      <field name="supplier_id" type="String" indexed="true" stored="true"/>
-      <field name="quantity_per_unit" type="String" indexed="true" stored="true"/>
-      <field name="unit_price" type="String" indexed="true" stored="true"/>
-      <field name="units_in_stock" type="String" indexed="true" stored="true"/>
-      <field name="units_on_order" type="String" indexed="true" stored="true"/>
-      <field name="recorder_level" type="String" indexed="true" stored="true"/>
-      <field name="discontinued" type="String" indexed="true" stored="true"/>
+      <field name="id" type="string" indexed="true" stored="true"/>
+      <field name="name" type="string" indexed="true" stored="true"/>
+      <field name="supplier_id" type="string" indexed="true" stored="true"/>
+      <field name="quantity_per_unit" type="string" indexed="true" stored="true"/>
+      <field name="unit_price" type="string" indexed="true" stored="true"/>
+      <field name="units_in_stock" type="string" indexed="true" stored="true"/>
+      <field name="units_on_order" type="string" indexed="true" stored="true"/>
+      <field name="recorder_level" type="string" indexed="true" stored="true"/>
+      <field name="discontinued" type="string" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
