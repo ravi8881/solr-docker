@@ -50,19 +50,22 @@
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
       <field name="id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="customer_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="employee_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="order_date" type="DATE" indexed="true" stored="true"/>
-      <field name="required_date" type="DATE" indexed="true" stored="true"/>
-      <field name="shipped_date" type="DATE" indexed="true" stored="true"/>
-      <field name="ship_via" type="INTEGER" indexed="true" stored="true"/>
-      <field name="freight" type="BIGINT" indexed="true" stored="true"/>
-      <field name="ship_name" type="VARCHAR(40)" indexed="true" stored="true"/>
-      <field name="ship_address" type="VARCHAR(60)" indexed="true" stored="true"/>
-      <field name="ship_city" type="INTEGER" indexed="true" stored="true"/>
-      <field name="ship_region" type="VARCHAR(15)" indexed="true" stored="true"/>
-      <field name="ship_postal_code" type="VARCHAR(10)" indexed="true" stored="true"/>
-      <field name="ship_country" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="last_name" type="VARCHAR(20)" indexed="true" stored="true"/>
+      <field name="first_name" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="title" type="VARCHAR(30)" indexed="true" stored="true"/>
+      <field name="title_of_courtesy" type="VARCHAR(25)" indexed="true" stored="true"/>
+      <field name="birth_date" type="DATE" indexed="true" stored="true"/>
+      <field name="hire_date" type="DATE" indexed="true" stored="true"/>
+      <field name="address" type="VARCHAR(60)" indexed="true" stored="true"/>
+      <field name="city" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="region" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="postal_code" type="VARCHAR(10)" indexed="true" stored="true"/>
+      <field name="country" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="home_phone" type="VARCHAR(24)" indexed="true" stored="true"/>
+      <field name="extension" type="VARCHAR(4)" indexed="true" stored="true"/>
+      <field name="photo" type="TEXT" indexed="true" stored="true"/>
+      <field name="notes" type="TEXT" indexed="true" stored="true"/>
+      <field name="reports_to" type="INTEGER" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields

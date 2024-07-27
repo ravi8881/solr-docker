@@ -114,12 +114,16 @@ RUN set -ex; \
   rm -r "$GNUPGHOME"
 
  COPY --chown=0:0 scripts /opt/docker-solr/scripts
-  COPY --chown=0:0 ravimem /var/solr/data/ravimem
-  COPY --chown=0:0 ravime2 /var/solr/data/ravime2
+  COPY --chown=0:0 products /var/solr/data/products
+  COPY --chown=0:0 order_details /var/solr/data/order_details
+  COPY --chown=0:0 suppliers /var/solr/data/suppliers
   COPY --chown=0:0 orders /var/solr/data/orders
-  COPY --chown=0:0 headsheet /var/solr/data/headsheet
+  COPY --chown=0:0 employees /var/solr/data/employees
+  COPY --chown=0:0 customers /var/solr/data/customers
+  COPY --chown=0:0 shippers /var/solr/data/shippers
 
 RUN chmod -R 0777 /var/solr/data
+RUN chmod -R +x /opt/docker-solr/scripts
 
 VOLUME /var/solr
 EXPOSE 8983

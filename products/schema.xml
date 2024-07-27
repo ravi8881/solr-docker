@@ -50,19 +50,14 @@
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
       <field name="id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="customer_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="employee_id" type="INTEGER" indexed="true" stored="true"/>
-      <field name="order_date" type="DATE" indexed="true" stored="true"/>
-      <field name="required_date" type="DATE" indexed="true" stored="true"/>
-      <field name="shipped_date" type="DATE" indexed="true" stored="true"/>
-      <field name="ship_via" type="INTEGER" indexed="true" stored="true"/>
-      <field name="freight" type="BIGINT" indexed="true" stored="true"/>
-      <field name="ship_name" type="VARCHAR(40)" indexed="true" stored="true"/>
-      <field name="ship_address" type="VARCHAR(60)" indexed="true" stored="true"/>
-      <field name="ship_city" type="INTEGER" indexed="true" stored="true"/>
-      <field name="ship_region" type="VARCHAR(15)" indexed="true" stored="true"/>
-      <field name="ship_postal_code" type="VARCHAR(10)" indexed="true" stored="true"/>
-      <field name="ship_country" type="VARCHAR(15)" indexed="true" stored="true"/>
+      <field name="name" type="VARCHAR" indexed="true" stored="true"/>
+      <field name="supplier_id" type="INTEGER" indexed="true" stored="true"/>
+      <field name="quantity_per_unit" type="VARCHAR(20)" indexed="true" stored="true"/>
+      <field name="unit_price" type="BIGINT" indexed="true" stored="true"/>
+      <field name="units_in_stock" type="SMALLINT" indexed="true" stored="true"/>
+      <field name="units_on_order" type="SMALLINT" indexed="true" stored="true"/>
+      <field name="recorder_level" type="SMALLINT" indexed="true" stored="true"/>
+      <field name="discontinued" type="BOOLEAN" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
