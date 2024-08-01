@@ -29,3 +29,10 @@ jobs:
         echo "Extracted projectName: $projectName"
         echo "$projectName" > file.json
         echo "PROJECT_PAYLOAD=$projectName" >> $GITHUB_ENV
+
+
+    - name: Build Docker image
+      run: |
+        echo "Building Docker image in directory: ${{ env.PROJECT_PAYLOAD }}"
+        cd ${{ env.PROJECT_PAYLOAD }}
+        docker build -t ravi8881/solr-compile-code-app-image:latest .
