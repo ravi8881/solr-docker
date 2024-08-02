@@ -36,6 +36,12 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
+    - name: List directories in the project payload directory
+      run: |
+        echo "Listing directories in ${{ env.PROJECT_PAYLOAD }}"
+        cd ${{ env.PROJECT_PAYLOAD }}
+        ls -d */
+
     - name: Build Docker image
       run: |
         echo "Building Docker image in directory: ${{ env.PROJECT_PAYLOAD }}"
