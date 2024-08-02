@@ -12,6 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: royal
+
 
     - name: Log event payload to a file
       run: echo '${{ toJson(github.event.client_payload) }}' > event_payload.json
