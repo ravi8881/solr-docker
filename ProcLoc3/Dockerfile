@@ -114,7 +114,7 @@ RUN set -ex; \
   rm -r "$GNUPGHOME"
 
  COPY --chown=0:0 scripts /opt/docker-solr/scripts
-  COPY --chown=0:0 ravimem /var/solr/data/ravimem
+  COPY --chown=0:0 ravibest /var/solr/data/ravibest
   COPY --chown=0:0 ravime2 /var/solr/data/ravime2
   COPY --chown=0:0 orders /var/solr/data/orders
   COPY --chown=0:0 headsheet /var/solr/data/headsheet
