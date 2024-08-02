@@ -38,8 +38,8 @@ jobs:
 
     - name: List directories in the project payload directory
       run: |
-        echo "Listing directories in ${{ env.PROJECT_PAYLOAD }}"
-        cd ${{ env.PROJECT_PAYLOAD }}
+        echo "Listing directories in ${{ github.workspace }}"
+        cd ${{ github.workspace }}
         ls -d */
 
     - name: Build Docker image
