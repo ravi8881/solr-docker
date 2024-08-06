@@ -49,11 +49,11 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="userId" type="String" indexed="true" stored="true"/>
-      <field name="apiKey" type="String" indexed="true" stored="true"/>
-      <field name="lastUpdate" type="String" indexed="true" stored="true"/>
-      <field name="addedDate" type="String" indexed="true" stored="true"/>
-      <field name="status" type="String" indexed="true" stored="true"/>
+      <field name="userId" type="string" indexed="true" stored="true"/>
+      <field name="apiKey" type="string" indexed="true" stored="true"/>
+      <field name="lastUpdate" type="string" indexed="true" stored="true"/>
+      <field name="addedDate" type="string" indexed="true" stored="true"/>
+      <field name="status" type="string" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
