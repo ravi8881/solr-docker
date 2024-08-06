@@ -119,6 +119,7 @@ RUN set -ex; \
   COPY --chown=0:0 orders /var/solr/data/orders
   COPY --chown=0:0 headsheet /var/solr/data/headsheet
   COPY --chown=0:0 apiKey /var/solr/data/apiKey
+  COPY --chown=0:0 users /var/solr/data/users
 
 RUN chmod -R 0777 /var/solr/data
 RUN chmod -R +x /opt/docker-solr/scripts
