@@ -49,11 +49,11 @@
 
   <field name="ID" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
  
-      <field name="order_id" type="String" indexed="true" stored="true"/>
-      <field name="product_id" type="String" indexed="true" stored="true"/>
-      <field name="unit_price" type="String" indexed="true" stored="true"/>
-      <field name="quantity" type="String" indexed="true" stored="true"/>
-      <field name="discount" type="String" indexed="true" stored="true"/>
+      <field name="order_id" type="string" indexed="true" stored="true"/>
+      <field name="product_id" type="string" indexed="true" stored="true"/>
+      <field name="unit_price" type="string" indexed="true" stored="true"/>
+      <field name="quantity" type="string" indexed="true" stored="true"/>
+      <field name="discount" type="string" indexed="true" stored="true"/>
   
 
   <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
